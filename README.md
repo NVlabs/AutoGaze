@@ -20,6 +20,7 @@ https://github.com/user-attachments/assets/ffc4cc72-e519-4ebe-aaa0-8d3ac3094160
 
 ## 🎉 Announcement
 
+[2026.4.8] AutoGaze was selected as conference highlight at CVPR2026!
 [2026.2.20] AutoGaze got accepted to CVPR2026!
 
 ## 📦 Installation
