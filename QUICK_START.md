@@ -13,8 +13,8 @@ from autogaze.datasets.video_utils import read_video_pyav, transform_video_for_p
 from autogaze.models.autogaze import AutoGazeImageProcessor, AutoGaze
 
 # Load AutoGaze model and its preprocessor from HuggingFace
-autogaze_transform = AutoGazeImageProcessor.from_pretrained("bfshi/AutoGaze")
-autogaze_model = AutoGaze.from_pretrained("bfshi/AutoGaze")
+autogaze_transform = AutoGazeImageProcessor.from_pretrained("nvidia/AutoGaze")
+autogaze_model = AutoGaze.from_pretrained("nvidia/AutoGaze")
 
 # Load a video
 video_path = "<path_to_autogaze_code>/assets/example_input.mp4"  # Fill in the path of AutoGaze codebase
@@ -92,7 +92,7 @@ Let's take SigLIP2-SO400M with 384x384 input resolution and 14x14 patch size as 
 
 ```python
 # Load AutoGaze preprocessor with size of 392
-autogaze_392_transform = AutoGazeImageProcessor.from_pretrained("bfshi/AutoGaze", size=(392, 392))
+autogaze_392_transform = AutoGazeImageProcessor.from_pretrained("nvidia/AutoGaze", size=(392, 392))
 
 # Preprocess the video with AutoGaze preprocessor
 video_input_autogaze_392 = transform_video_for_pytorch(raw_video, autogaze_392_transform)  # T * C * H * W
